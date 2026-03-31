@@ -1,14 +1,16 @@
-# @pipeworx/mcp-breweries
+# mcp-breweries
 
-MCP server for brewery data -- search and browse via [Open Brewery DB](https://www.openbrewerydb.org/) (free, no auth required).
+Breweries MCP — Open Brewery DB API (free, no auth)
+
+Part of the [Pipeworx](https://pipeworx.io) open MCP gateway.
 
 ## Tools
 
 | Tool | Description |
 |------|-------------|
-| `search_breweries` | Search breweries by name |
-| `get_brewery` | Get full details for a brewery by ID |
-| `breweries_by_city` | Find breweries in a specific city |
+| `search_breweries` | Search for breweries by name. Returns a list of matching breweries with location and contact details. |
+| `get_brewery` | Get full details for a specific brewery by its Open Brewery DB ID. |
+| `breweries_by_city` | Find breweries located in a specific city. |
 
 ## Quick Start
 
@@ -24,7 +26,7 @@ Add to your MCP client config:
 }
 ```
 
-Or run via CLI:
+Or use the CLI:
 
 ```bash
 npx pipeworx use breweries

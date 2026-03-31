@@ -1,0 +1,25 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.pipeworx-io/breweries",
+  "title": "ureweries",
+  "description": "Breweries MCP — Open Brewery DB API (free, no auth)",
+  "version": "0.1.0",
+  "websiteUrl": "https://pipeworx.io/packs/breweries",
+  "repository": {
+    "url": "https://github.com/pipeworx-io/mcp-breweries",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@pipeworx/mcp-breweries",
+      "version": "0.1.0"
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://gateway.pipeworx.io/breweries/mcp"
+    }
+  ]
+}

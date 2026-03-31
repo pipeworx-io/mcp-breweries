@@ -1,12 +1,3 @@
-/**
- * Breweries MCP — Open Brewery DB API (free, no auth)
- *
- * Tools:
- * - search_breweries: search breweries by name
- * - get_brewery: details for a specific brewery by ID
- * - breweries_by_city: breweries located in a given city
- */
-
 interface McpToolDefinition {
   name: string;
   description: string;
@@ -21,6 +12,16 @@ interface McpToolExport {
   tools: McpToolDefinition[];
   callTool: (name: string, args: Record<string, unknown>) => Promise<unknown>;
 }
+
+/**
+ * Breweries MCP — Open Brewery DB API (free, no auth)
+ *
+ * Tools:
+ * - search_breweries: search breweries by name
+ * - get_brewery: details for a specific brewery by ID
+ * - breweries_by_city: breweries located in a given city
+ */
+
 
 const BASE_URL = 'https://api.openbrewerydb.org/v1/breweries';
 
