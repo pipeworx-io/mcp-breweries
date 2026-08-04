@@ -2,14 +2,14 @@
 
 Breweries MCP — Open Brewery DB API (free, no auth)
 
-Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 673+ live data sources.
+Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 1394+ live data sources.
 
 ## Tools
 
 | Tool | Description |
 |------|-------------|
 | `search_breweries` | Search for breweries by name. Returns location, phone, website, and contact details for matching results. |
-| `get_brewery` | Get full details for a brewery by ID. Returns address, hours, type, and contact info. Use search_breweries to find brewery IDs. |
+| `get_brewery` | Fetch full details for a single brewery by its Open Brewery DB UUID. Returns name, type, street address, city, state, postal code, country, GPS coordinates, phone, and website URL. |
 | `breweries_by_city` | Find all breweries in a city (e.g., "Portland", "Denver"). Returns location, type, and contact details for each. |
 
 ## Quick Start
@@ -26,7 +26,7 @@ Add to your MCP client (Claude Desktop, Cursor, Windsurf, etc.):
 }
 ```
 
-Or connect to the full Pipeworx gateway for access to all 673+ data sources:
+Or connect to the full Pipeworx gateway for access to all 1394+ data sources:
 
 ```json
 {
@@ -50,7 +50,7 @@ The gateway picks the right tool and fills the arguments automatically.
 
 ## More
 
-- [All tools and guides](https://github.com/pipeworx-io/examples)
+- [Docs and guides](https://pipeworx.io/docs)
 - [pipeworx.io](https://pipeworx.io)
 
 ## License
