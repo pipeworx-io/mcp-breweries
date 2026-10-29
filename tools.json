@@ -1,0 +1,58 @@
+[
+  {
+    "name": "search_breweries",
+    "description": "Search for breweries by name. Returns location, phone, website, and contact details for matching results.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Brewery name or partial name to search for"
+        },
+        "limit": {
+          "type": "number",
+          "description": "Maximum number of results to return (default 10, max 50)"
+        }
+      },
+      "required": [
+        "query"
+      ]
+    }
+  },
+  {
+    "name": "get_brewery",
+    "description": "Fetch full details for a single brewery by its Open Brewery DB UUID. Returns name, type, street address, city, state, postal code, country, GPS coordinates, phone, and website URL.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Open Brewery DB brewery ID (e.g., \"b54b16e1-ac3b-4bff-a11f-f7ae4ddc27e1\")"
+        }
+      },
+      "required": [
+        "id"
+      ]
+    }
+  },
+  {
+    "name": "breweries_by_city",
+    "description": "Find all breweries in a city (e.g., \"Portland\", \"Denver\"). Returns location, type, and contact details for each.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "city": {
+          "type": "string",
+          "description": "City name to search breweries in (e.g., \"Portland\", \"Denver\")"
+        },
+        "limit": {
+          "type": "number",
+          "description": "Maximum number of results to return (default 10, max 50)"
+        }
+      },
+      "required": [
+        "city"
+      ]
+    }
+  }
+]
