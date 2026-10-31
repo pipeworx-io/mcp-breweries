@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-breweries",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Breweries MCP — Open Brewery DB API (free, no auth)",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "breweries",
     "gatewaySlug": "breweries",
-    "sourceHash": "v1-9c41bce345d1b3bc6920d1777cb131a9052b5464b2f56e59d9eeccbf840e584a",
-    "sourceCommit": "4277282d72f9bf55e548b3799aaf737baf22152f"
+    "sourceHash": "v1-c65568f97f3b6c7ac2697dc611fb577fbe1ff07d4192be2b0d78d191d06b5db2",
+    "sourceCommit": "547a3983b42dacf4389ca474860b0a1dee8e6053"
   }
 }
